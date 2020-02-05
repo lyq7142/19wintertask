@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>上传</title>
+        <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size:100px; 
+            font-family: "Microsoft YaHei";
+        }
+ 
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(224, 232, 241);      
+        }
+        .header{
+            height: 1.14rem;
+            background: rgb(141, 176, 240);
+            font-size:0.19rem;
+            color: white;       
+            line-height: 0.75rem;     /*字高低*/
+            padding-left: 0.1rem;
+            text-align: center;
+            z-index: -1;
+            box-shadow: 0 0 7px rgb(132, 152, 231);
+        }  
+     
+        .backimg{                    /*返回图标位置*/
+            position: absolute;
+            left: 5%;
+            top: 0.3rem;
+        }
+        .add{                      /*加号图片位置*/
+            position: absolute;
+            margin-left: 0.12rem;
+        }
+        table{
+            width: 90%;        
+        }
+        td{
+            width: 10px;
+            height: 50px;
+            line-height: 25px;        
+        }
+        .loginbox{                     /*白色块底*/
+            font-size: 0.15rem;
+            height: 5.15rem;             /*高宽*/
+            width: 85%;
+            padding-left: 0.2rem;
+            padding-top: 0.2rem;
+            background:#fff;
+            margin-top: -0.43rem;       /*离header的距离 负的有交集，z-index大在上面*/
+            margin-right: auto;         /*左右居中*/
+            margin-left: auto;
+            box-shadow: 1px 1px 8px rgb(153, 196, 245);
+          }
+          .jiantou1{
+              position: absolute;
+              left: 84%;
+              margin-top: 5px;
+          }
+          .jiantou2{
+              position: absolute;
+              left: 84%;
+              margin-top: 5px;
+          }
+          button{                  /*上传 按钮*/
+            width: 92%;   
+		    height: 40px;
+			color: #ffffff;
+			background-color: rgba(136, 176, 250, 0.849);
+            border: 0;
+			line-height: 40px;  
+			font-size: 0.17rem;  
+			border-radius: 8px;
+            
+          }
+          .shangchuan{
+              width: 100%;
+              text-align: center;
+              margin-top: -30px;
+          }
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header"> 
+            <img class="backimg" src="back.png" width="20px" height="20px"/>
+                 上传  
+        </div>
+        
+        <div class="loginbox">             <!--白块底-->
+    
+              <img src="tx1.png" width="95px" height="95px"/>
+              <img class="add" src="tx2.png" width="95px" height="95px"/>
+                
+        
+                   <table>
+                       <tr></tr>
+                        <td style="color: rgb(99, 92, 92);">标题</td>
+                        <td style="border-bottom: 1px solid rgb(240, 234, 234);">论坛APP界面设计</td>
+                    <tr></tr>
+                        <td style="color: rgb(99, 92, 92);">姓名</td>
+                        <td style="border-bottom: 1px solid rgb(240, 234, 234);">LYY</td>
+                    <tr></tr>
+                        <td style="color: rgb(99, 92, 92);">范围</td>
+                        <td style="border-bottom: 1px solid rgb(240, 234, 234);">移动端界面设计</td>
+                    <tr></tr>
+                        <td style="color: rgb(99, 92, 92);">注释</td>
+                        <td style="border-bottom: 1px solid rgb(240, 234,234);">该款界面简洁明了，充分了解用户需求后而开发的界面</td>
+                    <tr></tr>
+                        <td style="color: rgb(99, 92, 92);">分类</td>
+                        <td style="border-bottom: 1px solid rgb(240, 234, 234);">效率性应用<img class="jiantou1" src="jiantou.png" width="9px" height="14px"> </td>
+                    <tr></tr>
+                        <td style="color: rgb(99, 92, 92);">下载</td>
+                        <td style="border-bottom: 1px solid rgb(240, 234, 234);">允许下载<img class="jiantou2" src="jiantou.png" width="9px" height="14px"> </td>
+                    <tr></tr>
+                        <td style="color: rgb(99, 92, 92);">授权</td>
+                        <td style="border-bottom: 1px solid rgb(240, 234, 234);">禁止商业使用</td>
+                   </table>
+             
+                         
+        </div>
+
+        <div class="shangchuan">
+        <button>上传</button>
+        </div>
+    </body>
+    </html>

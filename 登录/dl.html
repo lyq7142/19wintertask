@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>登录页</title>
+        <style type="text/css">	
+                     body{
+                         margin: 0;
+                         padding: 0;
+                         height: 100%;
+                         width: 100%; 
+                         background-size:auto;
+                         background-image: url('bgd.png');
+                         background-repeat: no-repeat;                   
+                     }
+                     @media (max-width:330px ) {
+                      .all{
+                          position: absolute;
+                          top: -60px;
+                      }
+                     
+                     }
+                     .login-box{
+                         background-color: rgb(255, 255, 255);
+                         width: 80%;
+                         height: 380px;
+                         margin-left: auto;        /*白块水平居中，不要absolute定位*/
+                         margin-right: auto;
+                         margin-top: -88px;
+                         border-radius: 10px;
+                         text-align: center;    /*内部框等元素水平居中*/
+                     }
+                     .kuang{            /*图片水平居中父级元素*/
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 210px;
+                     }
+                     .tx{
+                         margin-top: -28px;
+                     }
+                    
+                     input{
+                      
+				         color: rgb(134, 127, 127);
+				         border: 1px solid #d8d0d0;
+				         width: 72%;
+                         outline:none;
+                         text-align: center;
+                         margin-top: 30px;
+                         margin-bottom: -10px;
+				         height: 45px;
+                         border-radius: 25px;
+                     }
+                     input:focus{
+                         box-shadow:0 0 rgb(224, 213, 213);
+				         color: rgb(109, 101, 101);
+				         border: 1px solid #b1acac;
+				         width: 72%;
+                         text-align: center;
+                         margin-top: 30px;
+                         margin-bottom: -10px;
+				         outline:none;
+				         height: 45px;
+                         border-radius: 25px;
+                     }
+
+                     #username{
+				         position:relative;
+				         margin: 15px 0;
+                         font-size: 15px;
+                         text-align: center;
+                         color:#999494;
+			         }
+
+                     #password{
+			        	 position:relative;
+				         margin: 10px 0;
+                         font-size: 15px;
+                         text-align: center;
+                         color:#a39898;
+                     }
+                     
+                     #username:focus{
+                        position:relative;
+				         margin:15px 0;
+                         font-size: 15px;
+                         text-align: center;
+                         color:#3d3939;
+                     }
+
+                     #passwordw:focus{
+                        position:relative;
+				         margin: 10px 0;
+                         font-size: 15px;
+                         text-align: center;
+                         color:rgb(54, 47, 47);                    
+                    }
+                     
+                     a{
+                         text-decoration: none;
+                         font-size: 13px;
+                     }
+                     .wenzi{
+                         margin-top: 30px;
+                     }
+                     .forget{
+                         position: absolute;
+                         color: #a7a1a1;
+                         left: 22%;
+                     }
+                     .register{
+                         position: absolute;
+                         color: #83c2f5;
+                         right: 22%;
+                     }
+
+                     button{   
+			         	 width: 72%;   
+			        	 height: 45px;
+			        	 color: #7ab4e4;
+			        	 background-color:#ffffff;
+                         border: 1px solid #8cc6f5;
+			        	 line-height: 40px;  
+                         font-size: 13px;  
+                         margin-top: 55px;
+                         outline:none;
+                         text-align: center;
+				         border-radius: 25px;
+                     }
+                     .bottom-box{
+                         margin-top: 40px;
+                     }
+                    .tubiao{
+                        float: left;
+                        width: 33%;
+                        box-sizing: border-box;
+                        padding-top: 5px;  
+                    }
+                    
+
+        </style>
+     </head>
+
+   <body>
+<div class="all">
+    <div class="kuang">
+        <img src="arc.png" width="115px" height="43px"/>
+         </div>
+
+    <div class="login-box">
+        <form>  
+            <div style="text-align: center;">
+           <img src="touxiang.png" class="tx" width="90px" height="90px"/>
+            </div>
+           
+            <input type="text" id="username" value="admin"/>
+             <input type="password" id="password" name="password" placeholder="请输入密码" />
+             <input type="hidden" name="password" value="123456"/>
+         
+               <div class="wenzi">
+             <a class="forget" href="#">忘记密码</a>              
+             <a class="register" href="#">立即注册</a>
+           </div>
+             <button onclick="myClick()">登录</button> 
+            </form> 
+   </div>
+
+       <div class="bottom-box" style="text-align:center;width: 100%;" >  <!--图片文字居中-->
+           <p style="color: rgb(255, 255, 255);font-size: 14px;"> ———————  第三方登录  ———————</p> 
+    <div style="width: 100%;">
+       <div class="tubiao">
+        <a href="#"><img src="wx.png" class="wx" width="45px" height="45px"/></a>
+        </div>
+        <div class="tubiao">
+         <a href="#"><img src="qq.png" class="qq" width="45px" height="45px"/></a>
+        </div>
+        <div class="tubiao">
+
+         <a href="#"><img src="wb.png" class="wb" width="45px" height="45px"/></a>
+        </div>
+      </div>
+
+       </div>       </div>
+       <script>
+        let xmlhttp =new XMLHttpRequest();
+     let usernamestr=document.getElementById('username');
+     let passwordstr=document.getElementById('password');
+ 
+     function myClick(){
+     console.log(usernamestr.value)
+     console.log(passwordstr.value)
+         xmlhttp.onreadystatechange = callbackl;
+         xmlhttp.open("post","http://localhost:8080/a",true);
+         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+         xmlhttp.send("username="+usernamestr.value+"&password="+passwordstr.value);
+     }
+     function callbackl(){
+         if(xmlhttp.readyState == 4)
+             if(xmlhttp.status == 200){
+                 let data = xmlhttp.responseText;
+                 alert(data);
+             }
+     }
+      
+       </script>
+   </body>
+</html>

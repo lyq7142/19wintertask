@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: rgb(236, 243, 250);      
+}
+.header{
+   height: 92px;
+   background: rgb(142, 176, 238);
+   font-size: 19px;
+   color: white;       
+   line-height: 67px;     /*字高低*/      
+   text-align: center;
+   font-weight: 100;   /*字的粗细*/
+   box-shadow: 0 1px 4px rgb(144, 161, 231);
+   z-index: 50;
+   width: 100%;
+   position:fixed;     /*固定顶部导航栏*/
+   top:0;
+   left:0;
+  
+}  
+.back{           /*返回图标*/
+    position: absolute;
+    top: 23px;
+    left: 5%;
+}
+.search{            /*发现图标*/
+    position: absolute;
+    top: 20px;
+    right: 5%;
+}
+.jiemian{
+    position: absolute;
+    top: 40px;
+    font-size: 16px;
+    left: 15%;
+}
+.heng{
+    position: absolute;
+    top: 55px;
+    left: 16%;
+    font-weight: 300;
+}
+.shijue{
+    color: rgb(220, 224, 226);
+    margin-top: -25px;
+    font-size: 16px;
+}
+.chahua{
+    position: absolute;
+    color: rgb(220, 226, 228);
+    top: 40px;
+    font-size: 16px;
+    right: 15%;
+}
+.more1{              /*三个点*/
+    position: absolute;
+    right: 3%;
+    top: 125px;
+}
+.shuzi1{           /*1112*/
+    position: absolute;
+    color: rgb(164, 165, 167);
+    font-size: 12px;
+    top: 160px;
+    right: 62px;
+}
+.shuzi2{       
+    position: absolute;
+    color: rgb(164, 165, 167);
+    font-size: 12px;
+    top: 160px;
+    right: 26px;
+}
+.eye{          /*眼睛图标*/
+    position: absolute;
+    top: 160px;
+    right: 42px;
+}
+.message{
+    position: absolute;
+    top: 160px;
+    right: 8px;
+}
+.box1{
+    position: absolute;
+    font-size: 13.5px;
+    width: 43%;
+    height: 183px;
+    background-color: #fff;
+    margin-top: 110px;
+    margin-left: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgb(181, 196, 250);    
+    z-index: 0;
+}
+.box2{
+    position: absolute;
+    font-size: 13.5px;
+    width: 43%;
+    height: 183px;
+    background-color: #fff;
+    margin-top: 110px;
+    right: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgb(177, 194, 255);
+    z-index: 0;
+}
+.box3{
+    position: absolute;
+    font-size: 13.5px;
+    width: 43%;
+    height: 183px;
+    background-color: #fff;
+    margin-top: 308px;
+    margin-left: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgb(181, 196, 250);    
+    z-index: 0;
+}
+.box4{
+    position: absolute;
+    font-size: 13.5px;
+    width: 43%;
+    height: 183px;
+    background-color: #fff;
+    margin-top: 308px;
+    right: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgb(177, 194, 255);
+    z-index: 0;
+}
+.box5{
+    position: absolute;
+    font-size: 13.5px;
+    width: 43%;
+    height: 183px;
+    background-color: #fff;
+    margin-top: 505px;
+    margin-left: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgb(181, 196, 250);    
+    z-index: 0;
+}
+.box6{
+    position: absolute;
+    font-size: 13.5px;
+    width: 43%;
+    height: 183px;
+    background-color: #fff;
+    margin-top: 505px;
+    right: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgb(177, 194, 255);
+    z-index: 0;
+}
+
+.footer{            /*底部导航栏*/
+    height: 55px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(181, 194, 250);
+    z-index: 10;
+    position: fixed;        /*固定底部导航栏*/
+    bottom: 0;
+    width: 100%;
+    
+}
+.middle{           /*云上传图标*/
+   margin-top: -10px;     /*使边界出盒子*/
+   z-index: 30;
+}
+.tb3{
+    width: 55px;
+    height: 55px;
+}
+.tb1{       
+   position: absolute;
+   bottom: 12px; 
+   left: 9%;
+   z-index: 20;
+}
+.tb2{       
+   position: absolute;
+   bottom: 12px; 
+   left: 27%;
+   z-index: 20;
+}
+.tb4{
+   position: absolute;
+   bottom: 12px; 
+   right: 27%;
+   z-index: 20;
+}
+.tb5{
+   position: absolute;
+   bottom: 12px; 
+   right: 9%;
+   z-index: 20;
+}

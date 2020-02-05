@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+  
+   font-size: 100px; 
+   font-family: "Microsoft YaHei";
+}
+
+body{
+      width: 100%;
+      height: 100%;
+      background-color: rgb(223, 232, 241);      
+}
+.header{
+     height: 1.44rem;
+     background: rgb(141, 176, 240);
+     font-size:0.18rem;
+     color: white;       
+     line-height: 0.75rem;      
+     font-weight: 100;
+     z-index: -1;
+     box-shadow: 0 0 4px rgb(132, 152, 231);
+}  
+.shezhi{                 /*设置图标位置*/
+     position: absolute;
+     right: 50px;
+     top: 0.25rem;
+}
+.sz{                 /*设置文字位置*/
+     position: absolute;
+     right: 18px;
+     top: -0.01rem;
+     font-size: 0.14rem;
+     font-weight: 100;
+}
+.tx{                 /*头像*/
+  
+    margin-top: -0.8rem;
+    
+}
+.loginbox{
+   font-size: 15px;
+   height: 1rem;             /*高宽*/
+   width: 93%;
+   padding-top: 0.4rem;    
+   background:#fff;
+   margin-top: -0.43rem;    
+   margin-right: auto;         /*左右居中*/
+   margin-left: auto;
+   z-index: 20;  
+   border-radius: 5px;  
+   box-shadow: 0 1px 7px rgb(174, 211, 253); 
+}
+.name{                      /*LYY*/
+    text-align: center;
+    font-weight: 200;
+    color: rgb(149, 192, 240);
+}
+.introduce{
+    font-weight: 100;
+    text-align: center;
+    font-size: 0.12rem;
+    color: rgb(185, 186, 187);
+}
+table{
+    padding-top: 0.15rem;
+    width: 100%;
+}
+td{                 /*表格*/
+    font-weight: 350;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(81, 83, 83);
+    width: 1rem;
+    height: 5px;
+    line-height: 17px;        
+}
+.more1{              /*三个点*/
+    position: absolute;
+    right: 0.03rem;
+    top: 1.25rem;
+}
+.shuzi1{           /*1112*/
+    position: absolute;
+    color: rgb(180, 182, 187);
+    font-size: 11px;
+    top: 1.64rem;
+    right: 0.63rem;
+}
+.shuzi2{       
+    position: absolute;
+    color: rgb(181, 184, 189);
+    font-size: 11px;
+    top: 1.64rem;
+    right: 0.28rem;
+}
+.eye{          /*眼睛图标*/
+    position: absolute;
+    top: 1.64rem;
+    right: 0.44rem;
+}
+.message{
+    position: absolute;
+    top: 1.66rem;
+    right: 0.1rem;
+}
+
+.box1{
+    position: absolute;
+    font-size: 14px;
+    width: 43%;
+    height: 1.85rem;
+    background-color: #fff;
+    margin-top: 0.12rem;
+    margin-left: 0.18rem;
+    border-radius: 5px;
+   
+    box-shadow: 1px 1px 8px rgb(177, 191, 243);    
+    z-index: 0;
+}
+.box2{
+    position: absolute;
+    font-size: 14px;
+    width: 43%;
+    height: 1.85rem;
+    background-color: #fff;
+    margin-top: 0.12rem;
+    margin-right: 0.17rem;
+    right: 0.01rem;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    box-shadow: 1px 1px 8px rgb(181, 195, 252);
+   z-index: 0;
+}
+.box3{
+    position: absolute;
+    font-size: 14px;
+    width: 43%;
+    height: 1.85rem;
+    background-color: #fff;
+    margin-top: 2.14rem;
+    margin-left: 0.18rem; 
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    box-shadow: 1px 1px 8px rgb(182, 197, 255);
+    z-index: 0;
+}
+.box4{
+    position: absolute;
+    font-size: 14px;
+    width: 43%;
+    height: 1.85rem;
+    background-color: #fff;
+    margin-top: 2.14rem;
+    margin-right: 0.17rem; 
+    right: 0.01rem;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    box-shadow: 1px 1px 8px rgb(162, 178, 241);
+    z-index: 0;
+}
+
+
+.footer{            /*底部导航栏*/
+    height: 0.6rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(181, 194, 250);
+    z-index: 10;
+    position: fixed;        /*固定底部导航栏*/
+    bottom: 0px;
+}
+.middle{           /*云上传图标*/
+   margin-top: -61px;     /*使边界出盒子*/
+   z-index: 20;
+}
+.tb1{       
+   position: absolute;
+   bottom: -0.04rem; 
+   left: 10%;
+   z-index: 20;
+}
+.tb2{       
+   position: absolute;
+   bottom: -0.04rem; 
+   left: 27%;
+   z-index: 20;
+}
+.tb4{
+   position: absolute;
+   bottom: -0.04rem; 
+   right: 27%;
+   z-index: 20;
+}
+.tb5{
+   position: absolute;
+   bottom: -0.04rem; 
+   right: 10%;
+   z-index: 20;
+}

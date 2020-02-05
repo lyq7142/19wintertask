@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: rgb(234, 240, 247);      
+}
+.header{
+   height: 60px;
+   background: rgb(138, 174, 240);
+   font-size: 18px;
+   color: white;       
+   line-height: 67px;     /*字高低*/      
+   text-align: center;
+   font-weight: 100;   /*字的粗细*/
+   box-shadow: 0 1px 4px rgb(144, 161, 231);
+   z-index: 50;
+   
+}  
+.message{           /*信息图标*/
+    position: absolute;
+    top: 24px;
+    left: 5%;
+}
+.search{            /*搜索图标*/
+    position: absolute;
+    top: 18px;
+    right: 4%;
+}
+.left-sidebox{
+    position: absolute;
+    top: 90px;
+    width: 10px;
+    left: 0;
+    background: rgb(141, 177, 243);
+    height: 105px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 1px 1px 4px rgb(162, 206, 243);
+    z-index: 10;
+}
+.blue-box{
+    height: 128px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-image: url("bgd.png");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgb(156, 178, 235);
+    z-index: 20;
+}
+.write1{
+    text-align: center;
+    padding-top: 28px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.write2{
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 100;  
+    line-height: 23px;
+}
+.right-sidebox{
+    position: absolute;
+    top: 90px;
+    width: 10px;
+    right: 0;
+    background: rgb(166, 195, 250);
+    height: 105px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 0 3px rgb(165, 206, 240);
+    z-index: 10;
+
+}
+.middle-box{            /*中间白块*/
+    height: 110px;
+    width: 92%;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+    text-align: center;          /*四个图标整体居中*/
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgb(214, 224, 235);
+}
+.tp{                /*图标水平分布均匀*/
+    float: left;
+    width: 24%;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 19px;
+    min-width: 50px;
+}
+@media (max-width:330px ) {
+    .tp{
+        float: left;
+        width: 24%;
+        box-sizing: border-box;
+        padding: 10px;
+        min-width: 50px;
+    }
+}
+.large-box{
+    height: 350px;
+    width: 92%;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    border-radius: 10px;
+    font-weight: 300;
+    box-shadow: 0 0 4px rgb(217, 223, 230);
+}
+.shu{
+    position: absolute;
+    padding-top: 13px;
+    left: 6%;
+}
+.wenzi{
+    position: absolute;
+    padding-top: 13.5px;
+    left: 10%;
+    font-size: 14px;
+    font-weight: 350;
+    color: rgb(111, 178, 241);
+}
+
+.more{
+    position: absolute;
+    right: 8%;
+    padding-top: 13px;
+}
+.box1{
+    position: absolute;
+    font-size: 14px;
+    width: 40%;
+    height: 150px;
+    background-color: #fff;
+    margin-top: 45px;
+    left: 8%; 
+    z-index: 0;
+}
+.box2{
+    position: absolute;
+    font-size: 14px;
+    width: 40%;
+    height: 150px;
+    background-color: #fff;
+    margin-top: 45px;
+    right: 8%; 
+    z-index: 0;
+}
+.box3{
+    position: absolute;
+    font-size: 14px;
+    width: 40%;
+    height: 100px;
+    background-color: #fff;
+    margin-top: 225px;
+    left: 8%; 
+    z-index: 0;
+}
+.box4{
+    position: absolute;
+    font-size: 14px;
+    width: 40%;
+    height: 100px;
+    background-color: #fff;
+    margin-top: 225px;
+    right: 8%; 
+    z-index: 0;
+}
+
+.shuzi{
+    color: rgb(179, 179, 182);
+    font-size: 12px;
+    margin-top: 4px;
+}
+.footer{            /*底部导航栏*/
+    height: 53px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(181, 194, 250);
+    z-index: 10;
+    position: fixed;        /*固定底部导航栏*/
+    bottom: 0px;
+}
+.middle{           /*云上传图标*/
+   margin-top: -13px;     /*使边界出盒子*/ 
+   z-index: 30;
+}
+.tb1{       
+   position: absolute;
+   bottom: 11px; 
+   left: 9%;
+   z-index: 20;
+}
+.tb2{       
+   position: absolute;
+   bottom: 11px; 
+   left: 27%;
+   z-index: 20;
+}
+.tb4{
+   position: absolute;
+   bottom: 10.5px; 
+   right: 27%;
+   z-index: 20;
+}
+.tb5{
+   position: absolute;
+   bottom: 10px; 
+   right: 9%;
+   z-index: 20;
+}
