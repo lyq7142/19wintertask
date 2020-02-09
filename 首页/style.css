@@ -18,7 +18,10 @@ body{
    font-weight: 100;   /*字的粗细*/
    box-shadow: 0 1px 4px rgb(144, 161, 231);
    z-index: 50;
-   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
 }  
 .message{           /*信息图标*/
     position: absolute;
@@ -46,7 +49,7 @@ body{
     width: 88%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 80px;
     background-image: url("bgd.png");
     background-size: cover;
     border-radius: 10px;
